@@ -1,0 +1,41 @@
+#includeuser:checked::before{
+    content:'✔️';
+    padding: 2px;
+    font-size: 10px;
+    background-color:yellow;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 4px;
+}  
+.bigcont2{
+    background: linear-gradient(to bottom,rgb(59 7 100)  95%,purple 5% );
+}
+
+.bigcont{
+    background: linear-gradient(to bottom,rgb(59 7 100)  97%,purple );
+}
+.basic{
+    background-color: slategray;
+    box-shadow: 0px 0px 13px slategray;
+}
+.rangecheck::-webkit-slider-thumb{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 100%;
+    border: 2px solid yellow;
+}
+.rangecheck::-webkit-slider-thumb:hover{
+   scale: 1.2;
+   background-color: black;
+    border: 2px solid yellow;
+}
+.rangecheck{
+    appearance: none;
+    background-color: green;
+    background-size: "50% 100%";
+}

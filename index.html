@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator</title>
+    <link rel="icon" href="./images/pass fav.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./src/index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head> 
+  <body>
+    <div class="w-screen overflow-hidden h-screen  bg-purple-400 flex flex-col justify-center items-center drop-shadow-lg">
+      <h1 class="text-3xl  font-bold mb-3">Password generator</h1>
+      <div 
+       class="bigcont2 w-[300px] relative h-12 rounded-xl  justify-between flex flex-row ">
+        <div class="absolute text-yellow-400  right-1 -top-[15px] bg-purple-800 rounded-lg "><p class="copytextz"></p></div>
+        <input type="text" placeholder="Password" readonly class="bigcont2 rounded-l-xl passwordtext pointer-events-none p-2  placeholder:text-yellow-400 text-yellow-400">
+        <button> <img src="./images/copy.svg" class="w-5 copybtn m-3 h-5 hover:scale-[1.2]"></button>
+      </div>
+      <!--  -->
+      <div
+      class="bigcont text-white mt-3 w-[300px]  p-4 gap-4  rounded-xl flex flex-col justify-between items-start">
+        <div class="flex flex-row w-[100%] justify-between">
+        <h1 class="text-xl ">Password length</h1>
+        <p class="text-xl lengthvalue">0</p>
+      </div>
+        <input type="range" min="1" max="20" step="1" class=" cursor-pointer  appearance-none  hover:border-2 border-yellow-400 rounded-xl rangecheck w-[260px] h-4">
+        <div class=" flex flex-col gap-2 ">
+          <div class="flex flex-row gap-3">
+            <input type="checkbox" id="includeuser" checked class=" relative numbers12  appearance-none w-5 h-5 border-2 border-green-500 rounded-md cursor-pointer">
+            <h2>Include Lowercase Letters</h2>
+          </div>
+          <div class="flex flex-row gap-3">
+            <input type="checkbox" id="includeuser" class=" relative numbers12 appearance-none w-5 h-5 border-2 border-green-500 rounded-md cursor-pointer">
+            <h2>Include Uppercase Letters</h2>
+          </div>
+          <div class="flex flex-row gap-3">
+            <input type="checkbox" id="includeuser" checked class=" relative numbers12 appearance-none w-5 h-5 border-2 border-green-500 rounded-md cursor-pointer">
+            <h2>Include Numbers</h2>
+          </div>
+          <div class="flex flex-row gap-3">
+            <input type="checkbox" id="includeuser" class=" relative  numbers12 appearance-none w-5 h-5 border-2 border-green-500 rounded-md cursor-pointer">
+            <h2> Include Symbols</h2>
+          </div>
+        </div>
+         <!--  -->
+      <div class="flex flex-row w-[100%] justify-between">
+        <h1>Strength</h1>
+        <div class="flex gap-3 ">
+        <div class="w-3 mt-2 h-3 rounded-full basic checkcol"></div>
+        <div class=" text-yellow-400"><p class="indicator"></p></div>
+      </div>
+      </div>
+      <button class="bg-pink-900 generate23 hover:scale-[1.03] hover:bg-green-800 w-[100%] rounded-lg p-1 text-xl">Generate Password</button>
+      </div>
+    </div>
+   <script src="https://kit.fontawesome.com/8047145711.js" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
