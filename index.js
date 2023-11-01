@@ -7,12 +7,7 @@ lengthvalue1.innerText=10;
 let symbol = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 let indicator1=document.querySelector('.indicator');
 let checkcol1=document.querySelector('.checkcol');
-function takevalue(event)
-{
-    lengthvalue1.innerText=event.target.value;
-    rangeans1=event.target.value;
-    rangecheck1.style.backgroundSize= "50% 100%"
-}
+
 let copytext1=document.querySelector('copytext');
 let copytextz1=document.querySelector('.copytextz');
 function setcolor(color)
@@ -36,7 +31,10 @@ copybtn1.addEventListener('click',()=>{
     if(ans12.value)
     copytext();
 })
-rangecheck1.addEventListener('click',takevalue); 
+rangecheck1.addEventListener('click',(event)=>{
+    lengthvalue1.innerText=event.target.value;
+    rangeans1=event.target.value;
+}); 
 function generatenumber(min,max)
 {
    return Math.floor((Math.random()*(max-min))+min);
