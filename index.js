@@ -31,7 +31,7 @@ copybtn1.addEventListener('click',()=>{
     if(ans12.value)
     copytext();
 })
-rangecheck1.addEventListener('click',(event)=>{
+rangecheck1.addEventListener('input',(event)=>{
     lengthvalue1.innerText=event.target.value;
     rangeans1=event.target.value;
 }); 
